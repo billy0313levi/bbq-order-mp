@@ -1,0 +1,50 @@
+{
+  "bsonType": "object",
+  "required": ["tableNo"],
+  "permission": {
+    "read": true,
+    "create": "auth.uid != null",
+    "update": "auth.uid != null",
+    "delete": "auth.uid != null"
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "tableNo": {
+      "bsonType": "string",
+      "title": "桌号",
+      "description": "桌号，如：A01、B02",
+      "trim": "both"
+    },
+    "qrcodeUrl": {
+      "bsonType": "string",
+      "title": "扫码场景值",
+      "description": "小程序码 scene 值，如 t=A01",
+      "trim": "both"
+    },
+    "qrcodeImg": {
+      "bsonType": "string",
+      "title": "点餐二维码图片",
+      "description": "小程序码图片云存储地址 cloud://..."
+    },
+    "capacity": {
+      "bsonType": "int",
+      "title": "容纳人数",
+      "description": "本桌可坐人数",
+      "minimum": 1
+    },
+    "status": {
+      "bsonType": "int",
+      "title": "桌台状态",
+      "description": "0空闲 1占用",
+      "enum": [0, 1],
+      "defaultValue": 0
+    },
+    "createTime": {
+      "bsonType": "timestamp",
+      "title": "创建时间",
+      "description": "记录创建时间戳"
+    }
+  }
+}

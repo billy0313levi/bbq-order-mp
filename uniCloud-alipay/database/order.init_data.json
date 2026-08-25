@@ -1,0 +1,105 @@
+[
+  {
+    "orderNo": "TX9482648",
+    "tableNo": "A12",
+    "goodsList": [
+      {
+        "goodsId": "goods_yangtui",
+        "name": "秘制烤羊腿",
+        "price": 68,
+        "count": 1,
+        "img": "https://pic.nximg.cn/file/20210820/18472996_224214293106_2.jpg"
+      },
+      {
+        "goodsId": "goods_chicken",
+        "name": "炭烤鸡翅",
+        "price": 28,
+        "count": 2,
+        "img": "https://picsum.photos/seed/bbq-chicken/300/300"
+      },
+      {
+        "goodsId": "goods_suanmei",
+        "name": "冰镇酸梅汤",
+        "price": 12,
+        "count": 1,
+        "img": "https://picsum.photos/seed/bbq-suanmei/300/300"
+      }
+    ],
+    "totalPrice": 126,
+    "remark": "少辣，不要香菜",
+    "status": 2,
+    "createTime": "2026-08-17 12:35:12",
+    "updateTime": "2026-08-17 12:35:12"
+  },
+  {
+    "orderNo": "TX9481235",
+    "tableNo": "B03",
+    "goodsList": [
+      {
+        "goodsId": "goods_yu",
+        "name": "烤鱼（整条）",
+        "price": 58,
+        "count": 1,
+        "img": "https://picsum.photos/seed/bbq-yu/300/300"
+      },
+      {
+        "goodsId": "goods_jiucai",
+        "name": "烤韭菜",
+        "price": 5,
+        "count": 2,
+        "img": "https://picsum.photos/seed/bbq-jiucai/300/300"
+      },
+      {
+        "goodsId": "goods_suanmei",
+        "name": "冰镇酸梅汤",
+        "price": 12,
+        "count": 2,
+        "img": "https://picsum.photos/seed/bbq-suanmei/300/300"
+      }
+    ],
+    "totalPrice": 86,
+    "remark": "",
+    "status": 3,
+    "createTime": "2026-08-16 19:12:30",
+    "updateTime": "2026-08-16 20:01:02"
+  },
+  {
+    "orderNo": "TX9480112",
+    "tableNo": "A01",
+    "goodsList": [
+      {
+        "goodsId": "goods_shenghao",
+        "name": "蒜蓉烤生蚝",
+        "price": 15,
+        "count": 1,
+        "img": "https://picsum.photos/seed/bbq-shenghao/300/300"
+      },
+      {
+        "goodsId": "goods_pijiu",
+        "name": "冰镇啤酒",
+        "price": 10,
+        "count": 1,
+        "img": "https://picsum.photos/seed/bbq-pijiu/300/300"
+      },
+      {
+        "goodsId": "goods_yangrou",
+        "name": "羊肉串",
+        "price": 5,
+        "count": 2,
+        "img": "https://picsum.photos/seed/bbq-yangrou/300/300"
+      },
+      {
+        "goodsId": "goods_wuhua",
+        "name": "烤五花肉",
+        "price": 8,
+        "count": 1,
+        "img": "https://picsum.photos/seed/bbq-wuhua/300/300"
+      }
+    ],
+    "totalPrice": 58,
+    "remark": "",
+    "status": 1,
+    "createTime": "2026-08-10 18:30:00",
+    "updateTime": "2026-08-10 18:30:00"
+  }
+]

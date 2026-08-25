@@ -1,0 +1,85 @@
+{
+  "bsonType": "object",
+  "required": ["orderNo", "tableNo"],
+  "permission": {
+    "read": "auth.uid != null",
+    "create": "auth.uid != null",
+    "update": "auth.uid != null",
+    "delete": "auth.uid != null"
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "orderNo": {
+      "bsonType": "string",
+      "title": "订单号",
+      "description": "唯一订单号，如：TX20260818xxxx",
+      "trim": "both"
+    },
+    "tableNo": {
+      "bsonType": "string",
+      "title": "桌号",
+      "description": "下单桌号，如：A01",
+      "trim": "both"
+    },
+    "goodsList": {
+      "bsonType": "array",
+      "title": "商品明细",
+      "description": "下单的商品数组",
+      "properties": {
+        "goodsId": {
+          "bsonType": "string",
+          "title": "菜品ID",
+          "description": "关联 goods 集合的 _id"
+        },
+        "name": {
+          "bsonType": "string",
+          "title": "菜品名称"
+        },
+        "price": {
+          "bsonType": "double",
+          "title": "单价"
+        },
+        "count": {
+          "bsonType": "int",
+          "title": "数量",
+          "minimum": 1
+        },
+        "img": {
+          "bsonType": "string",
+          "title": "菜品图片"
+        }
+      }
+    },
+    "totalPrice": {
+      "bsonType": "double",
+      "title": "总价",
+      "description": "订单应付总额（元）",
+      "minimum": 0
+    },
+    "remark": {
+      "bsonType": "string",
+      "title": "备注",
+      "description": "顾客备注，如：少辣、不要香菜",
+      "trim": "both"
+    },
+    "status": {
+      "bsonType": "int",
+      "title": "订单状态",
+      "description": "1待接单 2制作中 3完成 4取消",
+      "enum": [1, 2, 3, 4],
+      "defaultValue": 1
+    },
+    "createTime": {
+      "bsonType": "timestamp",
+      "title": "下单时间",
+      "description": "下单时间，服务端自动生成"
+    },
+    "updateTime": {
+      "bsonType": "timestamp",
+      "title": "更新时间",
+      "description": "状态更新时间，服务端自动生成"
+    }
+  }
+}

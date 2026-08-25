@@ -1,0 +1,7 @@
+{
+  "name": "useCoupon",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud": {}
+  }
+}

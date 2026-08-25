@@ -1,0 +1,7 @@
+{
+  "name": "getCouponCount",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud": {}
+  }
+}

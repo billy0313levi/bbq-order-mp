@@ -1,0 +1,200 @@
+[
+  {
+    "_id": "goods_yangtui",
+    "category_id": "cat_chuan",
+    "name": "秘制烤羊腿",
+    "desc": "精选内蒙羔羊腿，碳火慢烤四小时",
+    "price": 68,
+    "stock": 50,
+    "img": "https://pic.nximg.cn/file/20210820/18472996_224214293106_2.jpg",
+    "sort": 0,
+    "status": 1
+  },
+  {
+    "_id": "goods_chicken",
+    "category_id": "cat_chi",
+    "name": "炭烤鸡翅",
+    "desc": "秘制腌料入味，外焦里嫩",
+    "price": 28,
+    "stock": 100,
+    "img": "https://picsum.photos/seed/bbq-chicken/300/300",
+    "sort": 0,
+    "status": 1
+  },
+  {
+    "_id": "goods_yu",
+    "category_id": "cat_yu",
+    "name": "烤鱼（整条）",
+    "desc": "活鱼现杀，麻辣鲜香",
+    "price": 58,
+    "stock": 30,
+    "img": "https://picsum.photos/seed/bbq-yu/300/300",
+    "sort": 0,
+    "status": 1
+  },
+  {
+    "_id": "goods_suanmei",
+    "category_id": "cat_yin",
+    "name": "冰镇酸梅汤",
+    "desc": "古法熬制，解腻神器",
+    "price": 12,
+    "stock": 200,
+    "img": "https://picsum.photos/seed/bbq-suanmei/300/300",
+    "sort": 0,
+    "status": 1
+  },
+  {
+    "_id": "goods_yangrou",
+    "category_id": "cat_chuan",
+    "name": "羊肉串",
+    "desc": "鲜嫩羊肉，肥瘦相间",
+    "price": 5,
+    "stock": 300,
+    "img": "https://picsum.photos/seed/bbq-yangrou/300/300",
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "_id": "goods_niurou",
+    "category_id": "cat_chuan",
+    "name": "牛肉串",
+    "desc": "厚切牛肉，嚼劲十足",
+    "price": 6,
+    "stock": 300,
+    "img": "https://picsum.photos/seed/bbq-niurou/300/300",
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "_id": "goods_wuhua",
+    "category_id": "cat_chuan",
+    "name": "烤五花肉",
+    "desc": "肥而不腻，撒上孜然辣椒面",
+    "price": 8,
+    "stock": 200,
+    "img": "https://picsum.photos/seed/bbq-wuhua/300/300",
+    "sort": 3,
+    "status": 1
+  },
+  {
+    "_id": "goods_jizhua",
+    "category_id": "cat_chuan",
+    "name": "烤鸡爪",
+    "desc": "软糯脱骨，越啃越香",
+    "price": 6,
+    "stock": 150,
+    "img": "https://picsum.photos/seed/bbq-jizhua/300/300",
+    "sort": 4,
+    "status": 1
+  },
+  {
+    "_id": "goods_jiucai",
+    "category_id": "cat_chuan",
+    "name": "烤韭菜",
+    "desc": "碳火快烤，蒜香十足",
+    "price": 5,
+    "stock": 150,
+    "img": "https://picsum.photos/seed/bbq-jiucai/300/300",
+    "sort": 5,
+    "status": 1
+  },
+  {
+    "_id": "goods_qiezi",
+    "category_id": "cat_chuan",
+    "name": "烤茄子",
+    "desc": "整只茄子对半烤，蒜蓉铺满",
+    "price": 12,
+    "stock": 80,
+    "img": "https://picsum.photos/seed/bbq-qiezi/300/300",
+    "sort": 6,
+    "status": 1
+  },
+  {
+    "_id": "goods_shenghao",
+    "category_id": "cat_chuan",
+    "name": "蒜蓉烤生蚝",
+    "desc": "现开生蚝，蒜香浓郁",
+    "price": 15,
+    "stock": 100,
+    "img": "https://picsum.photos/seed/bbq-shenghao/300/300",
+    "sort": 7,
+    "status": 1
+  },
+  {
+    "_id": "goods_xizhi",
+    "category_id": "cat_yu",
+    "name": "锡纸烤鱼",
+    "desc": "锡纸包裹，汤汁浓郁",
+    "price": 46,
+    "stock": 40,
+    "img": "https://picsum.photos/seed/bbq-xizhi/300/300",
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "_id": "goods_xiangla",
+    "category_id": "cat_yu",
+    "name": "香辣烤鱼",
+    "desc": "麻辣鲜香，配菜丰富",
+    "price": 62,
+    "stock": 40,
+    "img": "https://picsum.photos/seed/bbq-xiangla/300/300",
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "_id": "goods_mizhi",
+    "category_id": "cat_chi",
+    "name": "蜜汁烤翅",
+    "desc": "甜而不腻，色泽诱人",
+    "price": 24,
+    "stock": 80,
+    "img": "https://picsum.photos/seed/bbq-mizhi/300/300",
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "_id": "goods_aer",
+    "category_id": "cat_chi",
+    "name": "奥尔良烤翅",
+    "desc": "经典奥尔良风味，鲜嫩多汁",
+    "price": 26,
+    "stock": 80,
+    "img": "https://picsum.photos/seed/bbq-aer/300/300",
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "_id": "goods_ningmeng",
+    "category_id": "cat_yin",
+    "name": "柠檬水",
+    "desc": "现切柠檬，清爽解渴",
+    "price": 8,
+    "stock": 150,
+    "img": "https://picsum.photos/seed/bbq-ningmeng/300/300",
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "_id": "goods_pijiu",
+    "category_id": "cat_yin",
+    "name": "冰镇啤酒",
+    "desc": "冰爽畅饮，烧烤标配",
+    "price": 10,
+    "stock": 120,
+    "img": "https://picsum.photos/seed/bbq-pijiu/300/300",
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "_id": "goods_xigua",
+    "category_id": "cat_yin",
+    "name": "鲜榨西瓜汁",
+    "desc": "现榨鲜甜，冰镇更佳",
+    "price": 15,
+    "stock": 100,
+    "img": "https://picsum.photos/seed/bbq-xigua/300/300",
+    "sort": 3,
+    "status": 1
+  }
+]

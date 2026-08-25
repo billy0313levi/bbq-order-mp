@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "cat_rec",
+    "name": "推荐",
+    "icon": "",
+    "sort": 0,
+    "status": 1
+  },
+  {
+    "_id": "cat_chuan",
+    "name": "烤串",
+    "icon": "",
+    "sort": 1,
+    "status": 1
+  },
+  {
+    "_id": "cat_yu",
+    "name": "烤鱼",
+    "icon": "",
+    "sort": 2,
+    "status": 1
+  },
+  {
+    "_id": "cat_chi",
+    "name": "烤翅",
+    "icon": "",
+    "sort": 3,
+    "status": 1
+  },
+  {
+    "_id": "cat_yin",
+    "name": "饮品",
+    "icon": "",
+    "sort": 4,
+    "status": 1
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "_id": "cp_001",
+    "name": "满100减20",
+    "type": "fixed",
+    "value": 20,
+    "minAmount": 100,
+    "status": 1,
+    "desc": "全品类可用，限堂食",
+    "expireTime": "2026-12-31"
+  },
+  {
+    "_id": "cp_002",
+    "name": "满50减10",
+    "type": "fixed",
+    "value": 10,
+    "minAmount": 50,
+    "status": 1,
+    "desc": "全品类可用",
+    "expireTime": "2026-11-30"
+  },
+  {
+    "_id": "cp_003",
+    "name": "8.5折券",
+    "type": "discount",
+    "value": 0.85,
+    "minAmount": 200,
+    "status": 1,
+    "desc": "满200元可用",
+    "expireTime": "2026-10-31"
+  },
+  {
+    "_id": "cp_004",
+    "name": "新人立减5元",
+    "type": "fixed",
+    "value": 5,
+    "minAmount": 30,
+    "status": 1,
+    "desc": "满30元可用",
+    "expireTime": "2026-09-30"
+  },
+  {
+    "_id": "cp_005",
+    "name": "满80减15",
+    "type": "fixed",
+    "value": 15,
+    "minAmount": 80,
+    "status": 2,
+    "desc": "已使用",
+    "expireTime": "2026-08-15",
+    "useTime": "2026-08-10 19:30:00"
+  },
+  {
+    "_id": "cp_006",
+    "name": "满60减10",
+    "type": "fixed",
+    "value": 10,
+    "minAmount": 60,
+    "status": 3,
+    "desc": "已过期",
+    "expireTime": "2026-07-31"
+  }
+]

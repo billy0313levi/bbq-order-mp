@@ -1,0 +1,127 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@/uni_modules/uni-$1/components/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationStyle" : "custom" ,
+			"navigationBarTitleText": "炭火烧烤",
+			"enablePullDownRefresh": true,
+			"backgroundTextStyle": "dark"
+		}
+	}, {
+		"path": "pages/menu/menu",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "扫码点餐",
+			"enablePullDownRefresh": true,
+			"backgroundTextStyle": "dark"
+		}
+	}, {
+		"path": "pages/table/table",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "扫码绑桌"
+		}
+	}, {
+		"path": "pages/takeout/takeout",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "外卖点餐"
+		}
+	}, {
+		"path": "pages/reserve/reserve",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "预约订位"
+		}
+	}, {
+		"path": "pages/confirm-order/confirm-order",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "确认订单"
+		}
+	}, {
+		"path": "pages/order-list/order-list",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "我的订单",
+			"enablePullDownRefresh": true,
+			"backgroundTextStyle": "dark"
+		}
+	}, {
+		"path": "pages/order-detail/order-detail",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "订单详情",
+			"enablePullDownRefresh": true,
+			"backgroundTextStyle": "dark"
+		}
+	}, {
+		"path": "pages/profile/profile",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "个人中心",
+			"disableScroll": true
+		}
+	}, {
+		"path": "pages/topup/topup",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "账户充值"
+		}
+	}, {
+		"path": "pages/coupon/coupon",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "我的优惠券"
+		}
+	}, {
+		"path": "pages/shop/shop",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "店铺详情"
+		}
+	}, {
+		"path": "pages/balance-history/balance-history",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "余额明细"
+		}
+	}, {
+		"path": "pages/address/address",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "收货地址"
+		}
+	}, {
+		"path": "pages/address-edit/address-edit",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "编辑地址"
+		}
+	}, {
+			"path": "pages/goods-detail/goods-detail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "商品详情"
+			}
+		}, {
+			"path": "pages/table-manage/table-manage",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "桌号管理"
+			}
+		}],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "炭火烧烤",
+		"navigationBarBackgroundColor": "#F8F5F0",
+		"backgroundColor": "#F8F5F0"
+	}
+}

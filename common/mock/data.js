@@ -1,0 +1,132 @@
+/**
+ * 本地模拟数据（与 uniCloud-aliyun/database/db_init.json 保持一致）
+ * 纯前端开发阶段使用，页面通过 common/api.js 读取，不直接引用本文件。
+ */
+
+export const categories = [
+  { _id: 'cat_rec', name: '推荐', icon: '', sort: 0, status: 1 },
+  { _id: 'cat_chuan', name: '烤串', icon: '', sort: 1, status: 1 },
+  { _id: 'cat_yu', name: '烤鱼', icon: '', sort: 2, status: 1 },
+  { _id: 'cat_chi', name: '烤翅', icon: '', sort: 3, status: 1 },
+  { _id: 'cat_yin', name: '饮品', icon: '', sort: 4, status: 1 }
+]
+
+export const goods = [
+  { _id: 'goods_yangtui', category_id: 'cat_chuan', name: '秘制烤羊腿', desc: '精选内蒙羔羊腿，碳火慢烤四小时', price: 68, stock: 50, img: '/static/goods/18472996_224214293106_2.jpg', sort: 0, status: 1 },
+  { _id: 'goods_chicken', category_id: 'cat_chi', name: '炭烤鸡翅', desc: '秘制腌料入味，外焦里嫩', price: 28, stock: 100, img: '/static/goods/6828.jpg_wh860.jpg', sort: 0, status: 1 },
+  { _id: 'goods_yu', category_id: 'cat_yu', name: '烤鱼（整条）', desc: '活鱼现杀，麻辣鲜香', price: 58, stock: 30, img: 'https://picsum.photos/seed/bbq-yu/300/300', sort: 0, status: 1 },
+  { _id: 'goods_suanmei', category_id: 'cat_yin', name: '冰镇酸梅汤', desc: '古法熬制，解腻神器', price: 12, stock: 200, img: 'https://picsum.photos/seed/bbq-suanmei/300/300', sort: 0, status: 1 },
+  { _id: 'goods_yangrou', category_id: 'cat_chuan', name: '羊肉串', desc: '鲜嫩羊肉，肥瘦相间', price: 5, stock: 300, img: 'https://picsum.photos/seed/bbq-yangrou/300/300', sort: 1, status: 1 },
+  { _id: 'goods_niurou', category_id: 'cat_chuan', name: '牛肉串', desc: '厚切牛肉，嚼劲十足', price: 6, stock: 300, img: 'https://picsum.photos/seed/bbq-niurou/300/300', sort: 2, status: 1 },
+  { _id: 'goods_wuhua', category_id: 'cat_chuan', name: '烤五花肉', desc: '肥而不腻，撒上孜然辣椒面', price: 8, stock: 200, img: 'https://picsum.photos/seed/bbq-wuhua/300/300', sort: 3, status: 1 },
+  { _id: 'goods_jizhua', category_id: 'cat_chuan', name: '烤鸡爪', desc: '软糯脱骨，越啃越香', price: 6, stock: 150, img: 'https://picsum.photos/seed/bbq-jizhua/300/300', sort: 4, status: 1 },
+  { _id: 'goods_jiucai', category_id: 'cat_chuan', name: '烤韭菜', desc: '碳火快烤，蒜香十足', price: 5, stock: 150, img: 'https://picsum.photos/seed/bbq-jiucai/300/300', sort: 5, status: 1 },
+  { _id: 'goods_qiezi', category_id: 'cat_chuan', name: '烤茄子', desc: '整只茄子对半烤，蒜蓉铺满', price: 12, stock: 80, img: 'https://picsum.photos/seed/bbq-qiezi/300/300', sort: 6, status: 1 },
+  { _id: 'goods_shenghao', category_id: 'cat_chuan', name: '蒜蓉烤生蚝', desc: '现开生蚝，蒜香浓郁', price: 15, stock: 100, img: 'https://picsum.photos/seed/bbq-shenghao/300/300', sort: 7, status: 1 },
+  { _id: 'goods_xizhi', category_id: 'cat_yu', name: '锡纸烤鱼', desc: '锡纸包裹，汤汁浓郁', price: 46, stock: 40, img: 'https://picsum.photos/seed/bbq-xizhi/300/300', sort: 1, status: 1 },
+  { _id: 'goods_xiangla', category_id: 'cat_yu', name: '香辣烤鱼', desc: '麻辣鲜香，配菜丰富', price: 62, stock: 40, img: 'https://picsum.photos/seed/bbq-xiangla/300/300', sort: 2, status: 1 },
+  { _id: 'goods_mizhi', category_id: 'cat_chi', name: '蜜汁烤翅', desc: '甜而不腻，色泽诱人', price: 24, stock: 80, img: 'https://picsum.photos/seed/bbq-mizhi/300/300', sort: 1, status: 1 },
+  { _id: 'goods_aer', category_id: 'cat_chi', name: '奥尔良烤翅', desc: '经典奥尔良风味，鲜嫩多汁', price: 26, stock: 80, img: 'https://picsum.photos/seed/bbq-aer/300/300', sort: 2, status: 1 },
+  { _id: 'goods_ningmeng', category_id: 'cat_yin', name: '柠檬水', desc: '现切柠檬，清爽解渴', price: 8, stock: 150, img: 'https://picsum.photos/seed/bbq-ningmeng/300/300', sort: 1, status: 1 },
+  { _id: 'goods_pijiu', category_id: 'cat_yin', name: '冰镇啤酒', desc: '冰爽畅饮，烧烤标配', price: 10, stock: 120, img: 'https://picsum.photos/seed/bbq-pijiu/300/300', sort: 2, status: 1 },
+  { _id: 'goods_xigua', category_id: 'cat_yin', name: '鲜榨西瓜汁', desc: '现榨鲜甜，冰镇更佳', price: 15, stock: 100, img: 'https://picsum.photos/seed/bbq-xigua/300/300', sort: 3, status: 1 }
+]
+
+export const tables = [
+  { _id: 'table_A01', tableNo: 'A01', qrcodeUrl: '/pages/index/index?tableId=A01', status: 0, capacity: 4 },
+  { _id: 'table_A02', tableNo: 'A02', qrcodeUrl: '/pages/index/index?tableId=A02', status: 0, capacity: 4 },
+  { _id: 'table_A03', tableNo: 'A03', qrcodeUrl: '/pages/index/index?tableId=A03', status: 0, capacity: 6 },
+  { _id: 'table_A04', tableNo: 'A04', qrcodeUrl: '/pages/index/index?tableId=A04', status: 0, capacity: 6 },
+  { _id: 'table_A05', tableNo: 'A05', qrcodeUrl: '/pages/index/index?tableId=A05', status: 0, capacity: 8 },
+  { _id: 'table_A06', tableNo: 'A06', qrcodeUrl: '/pages/index/index?tableId=A06', status: 0, capacity: 8 },
+  { _id: 'table_A07', tableNo: 'A07', qrcodeUrl: '/pages/index/index?tableId=A07', status: 0, capacity: 4 },
+  { _id: 'table_A08', tableNo: 'A08', qrcodeUrl: '/pages/index/index?tableId=A08', status: 0, capacity: 4 },
+  { _id: 'table_A09', tableNo: 'A09', qrcodeUrl: '/pages/index/index?tableId=A09', status: 0, capacity: 6 },
+  { _id: 'table_A10', tableNo: 'A10', qrcodeUrl: '/pages/index/index?tableId=A10', status: 0, capacity: 6 },
+  { _id: 'table_A11', tableNo: 'A11', qrcodeUrl: '/pages/index/index?tableId=A11', status: 0, capacity: 8 },
+  { _id: 'table_A12', tableNo: 'A12', qrcodeUrl: '/pages/index/index?tableId=A12', status: 0, capacity: 8 },
+  { _id: 'table_B01', tableNo: 'B01', qrcodeUrl: '/pages/index/index?tableId=B01', status: 0, capacity: 4 },
+  { _id: 'table_B02', tableNo: 'B02', qrcodeUrl: '/pages/index/index?tableId=B02', status: 0, capacity: 4 },
+  { _id: 'table_B03', tableNo: 'B03', qrcodeUrl: '/pages/index/index?tableId=B03', status: 0, capacity: 6 },
+  { _id: 'table_B04', tableNo: 'B04', qrcodeUrl: '/pages/index/index?tableId=B04', status: 0, capacity: 6 }
+]
+
+export const coupons = [
+  { _id: 'cp_001', name: '满100减20', type: 'fixed', value: 20, minAmount: 100, status: 1, desc: '全品类可用，限堂食', expireTime: '2026-12-31', scope: 'all' },
+  { _id: 'cp_002', name: '满50减10', type: 'fixed', value: 10, minAmount: 50, status: 1, desc: '全品类可用', expireTime: '2026-11-30', scope: 'all' },
+  { _id: 'cp_003', name: '8.5折券', type: 'discount', value: 0.85, minAmount: 200, status: 1, desc: '满200元可用', expireTime: '2026-10-31', scope: 'all' },
+  { _id: 'cp_004', name: '新人立减5元', type: 'fixed', value: 5, minAmount: 30, status: 1, desc: '满30元可用', expireTime: '2026-09-30', scope: 'all' },
+  { _id: 'cp_005', name: '满80减15', type: 'fixed', value: 15, minAmount: 80, status: 2, desc: '已使用', expireTime: '2026-08-15', scope: 'all' },
+  { _id: 'cp_006', name: '满60减10', type: 'fixed', value: 10, minAmount: 60, status: 3, desc: '已过期', expireTime: '2026-07-31', scope: 'all' }
+]
+
+export const orders = [
+  {
+    _id: 'order_TX9482648',
+    orderNo: 'TX9482648',
+    tableNo: 'A12',
+    orderType: 'dine',
+    address: '',
+    goodsList: [
+      { goodsId: 'goods_yangtui', name: '秘制烤羊腿', price: 68, count: 1, img: 'https://picsum.photos/seed/bbq-yangtui/300/300', spice: 'mi' },
+      { goodsId: 'goods_chicken', name: '炭烤鸡翅', price: 28, count: 2, img: 'https://picsum.photos/seed/bbq-chicken/300/300', spice: 'zh' },
+      { goodsId: 'goods_suanmei', name: '冰镇酸梅汤', price: 12, count: 1, img: 'https://picsum.photos/seed/bbq-suanmei/300/300', spice: '' }
+    ],
+    totalPrice: 126,
+    remark: '少辣，不要香菜',
+    status: 2,
+    createTime: '2026-08-17 12:35:12',
+    updateTime: '2026-08-17 12:35:12'
+  },
+  {
+    _id: 'order_TX9481235',
+    orderNo: 'TX9481235',
+    tableNo: 'B03',
+    orderType: 'dine',
+    address: '',
+    goodsList: [
+      { goodsId: 'goods_yu', name: '烤鱼（整条）', price: 58, count: 1, img: 'https://picsum.photos/seed/bbq-yu/300/300', spice: 'chao' },
+      { goodsId: 'goods_jiucai', name: '烤韭菜', price: 5, count: 2, img: 'https://picsum.photos/seed/bbq-jiucai/300/300', spice: 'mi' },
+      { goodsId: 'goods_suanmei', name: '冰镇酸梅汤', price: 12, count: 2, img: 'https://picsum.photos/seed/bbq-suanmei/300/300', spice: '' }
+    ],
+    totalPrice: 86,
+    remark: '',
+    status: 3,
+    createTime: '2026-08-16 19:12:30',
+    updateTime: '2026-08-16 20:01:02'
+  },
+  {
+    _id: 'order_TX9480112',
+    orderNo: 'TX9480112',
+    tableNo: 'A01',
+    orderType: 'dine',
+    address: '',
+    goodsList: [
+      { goodsId: 'goods_shenghao', name: '蒜蓉烤生蚝', price: 15, count: 1, img: 'https://picsum.photos/seed/bbq-shenghao/300/300', spice: '' },
+      { goodsId: 'goods_pijiu', name: '冰镇啤酒', price: 10, count: 1, img: 'https://picsum.photos/seed/bbq-pijiu/300/300', spice: '' },
+      { goodsId: 'goods_yangrou', name: '羊肉串', price: 5, count: 2, img: 'https://picsum.photos/seed/bbq-yangrou/300/300', spice: 'mi' },
+      { goodsId: 'goods_wuhua', name: '烤五花肉', price: 8, count: 1, img: 'https://picsum.photos/seed/bbq-wuhua/300/300', spice: 'zh' }
+    ],
+    totalPrice: 58,
+    remark: '',
+    status: 1,
+    createTime: '2026-08-10 18:30:00',
+    updateTime: '2026-08-10 18:30:00'
+  },
+  {
+    _id: 'order_TX9490001',
+    orderNo: 'TX9490001',
+    tableNo: '',
+    orderType: 'takeout',
+    address: '北京市朝阳区XX小区1号楼101',
+    goodsList: [
+      { goodsId: 'goods_yangrou', name: '羊肉串', price: 5, count: 10, img: 'https://picsum.photos/seed/bbq-yangrou/300/300', spice: 'zh' },
+      { goodsId: 'goods_pijiu', name: '冰镇啤酒', price: 10, count: 4, img: 'https://picsum.photos/seed/bbq-pijiu/300/300', spice: '' }
+    ],
+    totalPrice: 90,
+    remark: '微辣',
+    status: 2,
+    createTime: '2026-08-17 20:12:30',
+    updateTime: '2026-08-17 20:12:30'
+  }
+]

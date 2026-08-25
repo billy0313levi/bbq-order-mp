@@ -1,0 +1,98 @@
+[
+  {
+    "tableNo": "A01",
+    "qrcodeUrl": "/pages/index/index?tableId=A01",
+    "status": 0,
+    "capacity": 4
+  },
+  {
+    "tableNo": "A02",
+    "qrcodeUrl": "/pages/index/index?tableId=A02",
+    "status": 0,
+    "capacity": 4
+  },
+  {
+    "tableNo": "A03",
+    "qrcodeUrl": "/pages/index/index?tableId=A03",
+    "status": 0,
+    "capacity": 6
+  },
+  {
+    "tableNo": "A04",
+    "qrcodeUrl": "/pages/index/index?tableId=A04",
+    "status": 0,
+    "capacity": 6
+  },
+  {
+    "tableNo": "A05",
+    "qrcodeUrl": "/pages/index/index?tableId=A05",
+    "status": 0,
+    "capacity": 8
+  },
+  {
+    "tableNo": "A06",
+    "qrcodeUrl": "/pages/index/index?tableId=A06",
+    "status": 0,
+    "capacity": 8
+  },
+  {
+    "tableNo": "A07",
+    "qrcodeUrl": "/pages/index/index?tableId=A07",
+    "status": 0,
+    "capacity": 4
+  },
+  {
+    "tableNo": "A08",
+    "qrcodeUrl": "/pages/index/index?tableId=A08",
+    "status": 0,
+    "capacity": 4
+  },
+  {
+    "tableNo": "A09",
+    "qrcodeUrl": "/pages/index/index?tableId=A09",
+    "status": 0,
+    "capacity": 6
+  },
+  {
+    "tableNo": "A10",
+    "qrcodeUrl": "/pages/index/index?tableId=A10",
+    "status": 0,
+    "capacity": 6
+  },
+  {
+    "tableNo": "A11",
+    "qrcodeUrl": "/pages/index/index?tableId=A11",
+    "status": 0,
+    "capacity": 8
+  },
+  {
+    "tableNo": "A12",
+    "qrcodeUrl": "/pages/index/index?tableId=A12",
+    "status": 0,
+    "capacity": 8
+  },
+  {
+    "tableNo": "B01",
+    "qrcodeUrl": "/pages/index/index?tableId=B01",
+    "status": 0,
+    "capacity": 4
+  },
+  {
+    "tableNo": "B02",
+    "qrcodeUrl": "/pages/index/index?tableId=B02",
+    "status": 0,
+    "capacity": 4
+  },
+  {
+    "tableNo": "B03",
+    "qrcodeUrl": "/pages/index/index?tableId=B03",
+    "status": 0,
+    "capacity": 6
+  },
+  {
+    "tableNo": "B04",
+    "qrcodeUrl": "/pages/index/index?tableId=B04",
+    "status": 0,
+    "capacity": 6
+  }
+]

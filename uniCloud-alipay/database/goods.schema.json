@@ -1,0 +1,61 @@
+{
+  "bsonType": "object",
+  "required": ["name", "price"],
+  "permission": {
+    "read": true,
+    "create": "auth.uid != null",
+    "update": "auth.uid != null",
+    "delete": "auth.uid != null"
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "name": {
+      "bsonType": "string",
+      "title": "菜品名称",
+      "description": "菜品名称，如：羊肉串",
+      "trim": "both"
+    },
+    "price": {
+      "bsonType": "double",
+      "title": "售价",
+      "description": "售价（单位：元），如：5",
+      "minimum": 0
+    },
+    "stock": {
+      "bsonType": "int",
+      "title": "库存",
+      "description": "可售库存数量，0表示售罄",
+      "minimum": 0
+    },
+    "img": {
+      "bsonType": "string",
+      "title": "菜品图片",
+      "description": "菜品高清图（建议 webp），如：/static/goods/yangrou.webp"
+    },
+    "category_id": {
+      "bsonType": "string",
+      "title": "所属分类",
+      "description": "关联 category 集合的 _id，如：cat_chuan"
+    },
+    "desc": {
+      "bsonType": "string",
+      "title": "菜品简介",
+      "description": "菜品介绍，点餐首页展示",
+      "trim": "both"
+    },
+    "sort": {
+      "bsonType": "int",
+      "title": "排序",
+      "description": "排序值，越小越靠前"
+    },
+    "status": {
+      "bsonType": "int",
+      "title": "上架状态",
+      "description": "1上架 0下架",
+      "enum": [0, 1],
+      "defaultValue": 1
+    }
+  }
+}

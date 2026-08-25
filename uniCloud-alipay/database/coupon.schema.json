@@ -1,0 +1,60 @@
+{
+  "bsonType": "object",
+  "required": ["name", "type", "value", "minAmount"],
+  "permission": {
+    "read": true,
+    "create": "auth.uid != null",
+    "update": "auth.uid != null",
+    "delete": "auth.uid != null"
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "name": {
+      "bsonType": "string",
+      "title": "优惠券名称",
+      "trim": "both"
+    },
+    "type": {
+      "bsonType": "string",
+      "title": "类型",
+      "description": "fixed: 满减券, discount: 折扣券",
+      "enum": ["fixed", "discount"]
+    },
+    "value": {
+      "bsonType": "double",
+      "title": "面值/折扣",
+      "description": "fixed 时为金额，discount 时为折扣（如 0.85 表示 8.5 折）",
+      "minimum": 0
+    },
+    "minAmount": {
+      "bsonType": "double",
+      "title": "门槛金额",
+      "description": "满多少元可用",
+      "minimum": 0
+    },
+    "status": {
+      "bsonType": "int",
+      "title": "状态",
+      "description": "1未使用 2已使用 3已过期",
+      "enum": [1, 2, 3],
+      "defaultValue": 1
+    },
+    "desc": {
+      "bsonType": "string",
+      "title": "描述",
+      "trim": "both"
+    },
+    "expireTime": {
+      "bsonType": "string",
+      "title": "有效期至",
+      "description": "YYYY-MM-DD"
+    },
+    "useTime": {
+      "bsonType": "string",
+      "title": "使用时间",
+      "description": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}

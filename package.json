@@ -1,0 +1,8 @@
+{
+  "name": "bbq-order-wxmp",
+  "version": "1.0.0",
+  "description": "炭火烧烤·微信扫码点餐小程序",
+  "dependencies": {
+    "pinia": "^2.2.6"
+  }
+}
