@@ -65,7 +65,8 @@ export default {
 		return {
 			navHeight: 44,
 			order: null,
-			orderId: ''
+			orderId: '',
+			goodsMap: {}
 		}
 	},
 	computed: {
@@ -95,7 +96,13 @@ export default {
 	},
 	methods: {
 		loadDetail() {
-			return api.getOrderList('').then(res => {
+			return api.getGoods().then(res => {
+				if (res.code === 0) {
+					const map = {}
+					;(res.data || []).forEach(g => { map[g._id] = g })
+					this.goodsMap = map
+				}
+			}).then(() => api.getOrderList('')).then(res => {
 				if (res.code === 0) {
 					const list = res.data || []
 					const found = list.find(item => item._id === this.orderId)
@@ -141,11 +148,12 @@ export default {
 		orderAgain() {
 			const items = this.order.goodsList || []
 			items.forEach(item => {
+				const g = this.goodsMap[item.goodsId]
 				this.cartStore.addToCart({
 					_id: item.goodsId,
 					name: item.name,
 					price: item.price,
-					image: item.img || item.image
+					image: (g && (g.img || g.image)) || item.img || item.image
 				})
 			})
 			uni.showToast({

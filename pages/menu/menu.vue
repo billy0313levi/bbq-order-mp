@@ -158,12 +158,8 @@ export default {
 			tableNo: '',
 			tableName: '',
 			searchKw: '',
-			activeCat: 'cat_rec',
-			allCategories: [
-				{ _id: 'cat_rec', name: '热销' },
-				{ _id: 'cat_chuan', name: '秘制肉串' },
-				{ _id: 'cat_hao', name: '生蚝套餐' }
-			],
+			activeCat: '',
+			allCategories: [],
 			allGoods: [],
 			scrollIntoId: '',
 			loading: false,
@@ -194,8 +190,7 @@ export default {
 			this.colHeight = 500
 		}
 		if (options && options.cat) {
-			const has = this.allCategories.find(c => c._id === options.cat)
-			if (has) this.activeCat = options.cat
+			this._pendingCat = options.cat
 		}
 		this.loadTable()
 		this.loadCategories()
@@ -230,16 +225,15 @@ export default {
 		loadCategories() {
 			return api.getCategories().then(res => {
 				if (res.code === 0 && res.data && res.data.length) {
-					const reservedIds = ['cat_rec', 'cat_must']
-					const filtered = res.data.filter(c => {
-						if (reservedIds.includes(c._id)) return false
-						if (c.name === '推荐') return false
-						return true
-					})
-					this.allCategories = [
-						{ _id: 'cat_rec', name: '热销' },
-						...filtered
-					]
+					this.allCategories = res.data
+					if (this._pendingCat) {
+						const has = this.allCategories.find(c => c._id === this._pendingCat)
+						if (has) this.activeCat = this._pendingCat
+						this._pendingCat = ''
+					}
+					if (!this.activeCat || !this.allCategories.find(c => c._id === this.activeCat)) {
+						this.activeCat = this.allCategories[0]._id
+					}
 				}
 			}).catch(() => {})
 		},
@@ -258,8 +252,8 @@ export default {
 				const kw = this.searchKw.trim()
 				return this.allGoods.filter(g => (g.name || '').indexOf(kw) > -1)
 			}
-			if (catId === 'cat_rec') return this.allGoods.slice(0, 8)
-		return this.allGoods.filter(g => g.category_id === catId)
+			if (catId === 'cat_rec') return this.allGoods
+			return this.allGoods.filter(g => g.category_id === catId)
 		},
 		switchCat(id) {
 			this.activeCat = id

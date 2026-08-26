@@ -57,7 +57,7 @@
 								class="thumb"
 								v-for="(item, index) in (order.goodsList || []).slice(0, 3)"
 								:key="index"
-								:src="item.img || item.image"
+								:src="goodsThumb(item)"
 								mode="aspectFill"
 								lazy-load
 								:style="{ marginLeft: index > 0 ? '-40rpx' : '0', zIndex: 10 - index }"
@@ -105,7 +105,9 @@ export default {
 			activeType: '',
 			activeStatus: '',
 			orders: [],
-			loading: false
+			loading: false,
+			allGoods: [],
+			goodsMap: {}
 		}
 	},
 	computed: {
@@ -153,7 +155,14 @@ export default {
 		},
 		loadOrders() {
 			this.loading = true
-			return api.getOrderList('').then(res => {
+			return api.getGoods().then(res => {
+				if (res.code === 0) {
+					this.allGoods = res.data || []
+					const map = {}
+					this.allGoods.forEach(g => { map[g._id] = g })
+					this.goodsMap = map
+				}
+			}).then(() => api.getOrderList('')).then(res => {
 				if (res.code === 0) {
 					const list = res.data || []
 					list.forEach(o => { if (Number(o.status) === 1) o.status = 2 })
@@ -162,6 +171,11 @@ export default {
 			}).catch(err => {
 				console.error('加载订单失败', err)
 			}).finally(() => { this.loading = false })
+		},
+		goodsThumb(item) {
+			const g = this.goodsMap && this.goodsMap[item.goodsId]
+			if (g && (g.img || g.image)) return g.img || g.image
+			return item.img || item.image || ''
 		},
 		totalCount(order) {
 			return (order.goodsList || []).reduce((s, i) => s + (i.count || 0), 0)

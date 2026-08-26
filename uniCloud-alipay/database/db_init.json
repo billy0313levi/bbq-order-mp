@@ -274,10 +274,9 @@
       "tableNo": "B03",
       "goodsList": [
         { "goodsId": "goods_yu", "name": "烤鱼（整条）", "price": 58, "count": 1, "img": "https://picsum.photos/seed/bbq-yu/300/300" },
-        { "goodsId": "goods_jiucai", "name": "烤韭菜", "price": 5, "count": 2, "img": "https://picsum.photos/seed/bbq-jiucai/300/300" },
         { "goodsId": "goods_suanmei", "name": "冰镇酸梅汤", "price": 12, "count": 2, "img": "https://picsum.photos/seed/bbq-suanmei/300/300" }
       ],
-      "totalPrice": 86,
+      "totalPrice": 82,
       "remark": "",
       "status": 3,
       "createTime": "2026-08-16 19:12:30",

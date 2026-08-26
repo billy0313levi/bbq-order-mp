@@ -221,13 +221,12 @@ export default {
 			this.allGoods.forEach(g => { goodsMap[g._id] = g })
 			const catMap = {}
 			this.allCategories.forEach(c => { catMap[c._id] = c.name })
-			const recIds = ['cat_rec']
 			const groups = {}
 			const orderedCats = []
 			this.cartStore.items.forEach(item => {
 				const goods = goodsMap[item.goodsId]
-				let catId = 'cat_rec'
-				let catName = '热销'
+				let catId = ''
+				let catName = '其他'
 				if (goods && goods.category_id) {
 					catId = goods.category_id
 					if (catMap[catId]) catName = catMap[catId]

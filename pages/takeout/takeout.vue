@@ -132,12 +132,8 @@ export default {
 			statusBarHeight: 20,
 			colHeight: 400,
 			mode: 'pickup',
-			activeCat: 'cat_rec',
-			allCategories: [
-				{ _id: 'cat_rec', name: '热销' },
-				{ _id: 'cat_chuan', name: '秘制肉串' },
-				{ _id: 'cat_hao', name: '生蚝套餐' }
-			],
+			activeCat: '',
+			allCategories: [],
 			allGoods: [],
 			scrollIntoId: '',
 			searchKw: '',
@@ -187,16 +183,10 @@ export default {
 		loadCategories() {
 			api.getCategories().then(res => {
 				if (res.code === 0 && res.data && res.data.length) {
-					const reservedIds = ['cat_rec', 'cat_must']
-					const filtered = res.data.filter(c => {
-						if (reservedIds.includes(c._id)) return false
-						if (c.name === '推荐') return false
-						return true
-					})
-					this.allCategories = [
-						{ _id: 'cat_rec', name: '热销' },
-						...filtered
-					]
+					this.allCategories = res.data
+					if (!this.activeCat || !this.allCategories.find(c => c._id === this.activeCat)) {
+						this.activeCat = this.allCategories[0]._id
+					}
 				}
 			})
 		},
@@ -218,8 +208,8 @@ export default {
 				const kw = this.searchKw.trim()
 				return this.allGoods.filter(g => (g.name || '').indexOf(kw) > -1)
 			}
-			if (catId === 'cat_rec') return this.allGoods.slice(0, 8)
-		return this.allGoods.filter(g => g.category_id === catId)
+			if (catId === 'cat_rec') return this.allGoods
+			return this.allGoods.filter(g => g.category_id === catId)
 		},
 		formatPrice(v) { return Number(v || 0).toFixed(0) },
 		onAdd(g) { this.cartStore.addToCart(g) },
