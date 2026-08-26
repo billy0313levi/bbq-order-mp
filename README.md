@@ -3,12 +3,20 @@
 基于 **uni-app (Vue3) + uniCloud** 开发的烧烤店扫码点餐微信小程序，覆盖「堂食扫码点餐、外卖点餐、预约订位、优惠券、账户充值、订单管理、桌号管理」等完整点餐闭环。
 
 ## 项目主要截图
-![首页](./screenshot/home.jpg)
-![扫码点餐页](./screenshot/menu.jpg)
-![个人中心页](./screenshot/profile.jpg)
-![提交订单页](./screenshot/order.jpg)
-*提交订单页分=>自提/外卖/堂食,以上为外卖提交订单页*
-![订单列表页](./screenshot/order-list.jpg)
+
+| 首页 | 扫码点餐页 |
+| ---- | ---------- |
+| ![首页](./screenshot/home.jpg) | ![扫码点餐页](./screenshot/menu.jpg) |
+
+| 个人中心页 | 提交订单页 |
+| ---------- | ---------- |
+| ![个人中心页](./screenshot/profile.jpg) | ![提交订单页](./screenshot/order.jpg) |
+
+*提交订单页分=>自提/外卖/堂食，以上为外卖提交订单页*
+
+| 订单列表页 |
+| ---------- |
+| ![订单列表页](./screenshot/order-list.jpg) |
 
 ## 功能特性
 
