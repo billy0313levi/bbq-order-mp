@@ -4,19 +4,34 @@
 
 ## 项目主要截图
 
-| 首页 | 扫码点餐页 |
-| ---- | ---------- |
-| ![首页](./screenshot/home.jpg) | ![扫码点餐页](./screenshot/menu.jpg) |
-
-| 个人中心页 | 提交订单页 |
-| ---------- | ---------- |
-| ![个人中心页](./screenshot/profile.jpg) | ![提交订单页](./screenshot/order.jpg) |
+<table>
+  <tr>
+    <td valign="top">
+      <img src="./screenshot/home.jpg" alt="首页">
+    </td>
+    <td valign="top">
+      <img src="./screenshot/menu.jpg" alt="扫码点餐页">
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="./screenshot/profile.jpg" alt="个人中心页">
+    </td>
+    <td valign="top">
+      <img src="./screenshot/order.jpg" alt="提交订单页">
+    </td>
+  </tr>
+</table>
 
 *提交订单页分=>自提/外卖/堂食，以上为外卖提交订单页*
 
-| 订单列表页 |
-| ---------- |
-| ![订单列表页](./screenshot/order-list.jpg) |
+<table>
+  <tr>
+    <td valign="top">
+      <img src="./screenshot/order-list.jpg" alt="订单列表页">
+    </td>
+  </tr>
+</table>
 
 ## 功能特性
 
